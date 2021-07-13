@@ -59,3 +59,4 @@ file:/home/johndoe/.gitconfig	false
 15).gitignore -> This is a file used to ignore
 16)git branch branchName -> Used to create a branch
 17)git checkout branchName -> used to switch to branchName
+18)
