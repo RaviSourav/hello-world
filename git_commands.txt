@@ -1,0 +1,54 @@
+1) cd path-> to navigate to particular Path.
+2) cd 'name'-> to avoid space and treat it as one string
+3) touch file_name.extension-> to create the file in the specified location
+4) $ echo "Text"> Filename  -> to edit ay file content
+4) $ git config --list --show-origin ->You can view all of your settings and where they are coming from using:
+4) $ git config --global core.editor atom->If you want to use a different text editor, such as Emacs, you can do the following:
+4) Your default branch name
+   By default Git will create a branch called master when you create a new repository with git init. 
+   From Git version 2.28 onwards, you can set a different name for the initial branch.
+
+   To set main as the default branch name do:
+
+   $ git config --global init.defaultBranch main
+4) Checking Your Settings
+   If you want to check your configuration settings, you can use the git config --list command to list all the settings Git can find at that point:
+
+$ git config --list
+user.name=Ravi Sourav
+user.email=ravisourav@example.com
+color.status=auto
+color.branch=auto
+color.interactive=auto
+color.diff=auto
+...
+
+
+You may see keys more than once, because Git reads the same key from different files ([path]/etc/gitconfig and ~/.gitconfig, for example). In this case, Git uses the last value for each unique key it sees.
+
+You can also check what Git thinks a specific key’s value is by typing git config <key>:
+
+$ git config user.name
+Ravi Sourav
+
+4) Since Git might read the same configuration variable value from more than one file, it’s possible that you have an unexpected value for one of these values and you don’t know why. In cases like that, you can query Git as to the origin for that value, and it will tell you which configuration file had the final say in setting that value:
+
+$ git config --show-origin rerere.autoUpdate
+file:/home/johndoe/.gitconfig	false
+
+4) git init -> To initialise the git.
+5) git config --global user.name 'User_Name'
+6) git config --global user.emmail 'User_Email'
+7) git add filename.extension -> to add the file name
+8) git status -> The git status command is used to display the state of the repository and staging area.
+   Mostly, it is used to display the state between Git Add and Git commit command.
+   We can check whether the changes and files are tracked or not
+9) git add filename -> The git add command adds a change in the working directory to the staging area. 
+                       It tells Git that you want to include updates to a particular file in the next commit.
+10)git add *.html -> add all html files
+10)git add . -> add all files in current directory
+10)The git reset command is used to undo a commit or staged snapshot.
+11)The git rm command can be used to remove individual files or a collection of files.
+   The cached option specifies that the removal should happen only on the staging index. 
+   Working directory files will be left alone
+12)git rm --cached -t . -> remove all the files from staging area.
