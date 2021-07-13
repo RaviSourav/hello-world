@@ -52,3 +52,5 @@ file:/home/johndoe/.gitconfig	false
    The cached option specifies that the removal should happen only on the staging index. 
    Working directory files will be left alone
 12)git rm --cached -t . -> remove all the files from staging area.
+13)git commit->
+   press I for Insert mode and then insert your comment and then press esc and then :wq and enter.
